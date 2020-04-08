@@ -4,9 +4,15 @@
 #
 ################################################################################
 
-HOSTBOOT_VERSION = $(call qstrip,$(BR2_HOSTBOOT_VERSION))
-HOSTBOOT_SITE ?= $(call github,ibm-op-release,hostboot,$(HOSTBOOT_VERSION))
+#HOSTBOOT_VERSION = $(call qstrip,$(BR2_HOSTBOOT_VERSION))
+#HOSTBOOT_SITE ?= $(call github,ibm-op-release,hostboot,$(HOSTBOOT_VERSION))
 
+#increase
+HOSTBOOT_VERSION = 0.0.1
+HOSTBOOT_SITE_METHOD = local
+HOSTBOOT_SITE = /home/nichole/work_dir-2/hostboot-0.0.1
+#increase off
+ 
 HOSTBOOT_LICENSE = Apache-2.0
 HOSTBOOT_LICENSE_FILES = LICENSE
 HOSTBOOT_DEPENDENCIES = host-binutils
